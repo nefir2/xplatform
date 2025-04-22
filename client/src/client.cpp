@@ -63,7 +63,10 @@ namespace Net
 		printf("Enter a message:");
 		std::getline(std::cin, message);
 
-
+		if (message.size() == 0) { 
+			printf("message size cannot be 0.\n");
+			return;
+		}
 
 		if (message == "prim")
 		{
